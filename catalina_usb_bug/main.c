@@ -196,6 +196,8 @@ int yyyUSB_init(yContextSt *ctx)
         //12.x.x  OS X 10.8.x Mountain Lion
         //11.x.x  OS X 10.7.x Lion
         //10.x.x  OS X 10.6.x Snow Leopard
+        printf("kern.osrelease=%s\n", str);
+
         str[2]=0;
         numver = atoi(str);
         if (numver >= 13 && numver < 15){
